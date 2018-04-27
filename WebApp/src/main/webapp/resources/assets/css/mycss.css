@@ -1,0 +1,10 @@
+@charset "EUC-KR";
+
+#login {
+	position: relative;
+	top: 10;
+	left: 1000;
+	width: 10em;
+	height: 10em;
+	background-color: black;
+}

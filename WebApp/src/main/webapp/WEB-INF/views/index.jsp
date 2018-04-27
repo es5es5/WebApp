@@ -7,6 +7,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="resources/assets/css/main.css" />
+<link rel="stylesheet" href="resources/assets/css/mycss.css" />
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
 </head>
 <body>
 
@@ -15,15 +23,13 @@
 	<div class="inner">
 		<span class="icon major fa-cloud"></span>
 		<h1>
-			Hi, I'm <strong>JinsLover</strong>, another fine<br /> little freebie
-			from <a href="http://html5up.net">HTML5 UP</a>.
+			Hi, I'm <strong>JinsLover</strong>.
 		</h1>
 		<p>
-			Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-			lobortis feugiat sapien sed etiam volutpat accumsan.
+			Place to save the memories of moment.<br />
 		</p>
 		<ul class="actions">
-			<li><a href="#one" class="button scrolly">Discover</a></li>
+			<li><a href="discover.home" class="button scrolly">Discover</a></li>
 		</ul>
 	</div>
 	</section>
@@ -35,13 +41,10 @@
 			<div class="6u 12u$(medium)">
 				<header class="major">
 				<h2>
-					Lorem ipsum dolor adipiscing<br /> amet dolor consequat
+					Tis the most tender part of love, each other to forgive. <br />
 				</h2>
 				</header>
-				<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante
-					adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus
-					nascetur ac non. Lorem curae et ante amet sapien sed tempus
-					adipiscing id accumsan.</p>
+				<p>John Sheffield.</p>
 			</div>
 			<div class="6u$ 12u$(medium) important(medium)">
 				<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
@@ -164,13 +167,6 @@
 	</ul>
 	</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
 
 </body>
 </html>
