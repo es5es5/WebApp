@@ -12,4 +12,5 @@ local.properties
 .springBeans
 Servers/
 RemoteSystemsTempFiles/
-
+MANIFEST.MF
+pom.properties
