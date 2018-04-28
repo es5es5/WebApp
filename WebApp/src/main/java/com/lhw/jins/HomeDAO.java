@@ -11,9 +11,5 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeDAO {
 	@Autowired
 	private SqlSession ss;
-	
-	public void discoverHome(HttpServletRequest request, HttpServletResponse response) {
-		
-	}
 
 }

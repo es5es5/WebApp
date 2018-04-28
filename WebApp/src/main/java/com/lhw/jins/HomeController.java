@@ -16,13 +16,14 @@ public class HomeController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/discover.home", method = RequestMethod.GET)
-	public String discoverHome(HttpServletRequest request, HttpServletResponse response) {
-		hDAO.discoverHome(request, response);
-		// mDAO.loginCheck(req, res);
-		// sDAO.getAllSNSMsg(req, res);
-		// req.getSession().setAttribute("contentPage", "home.jsp");
-		// cDAO.getMsg(req, res);
+	@RequestMapping(value = "/login.go", method = RequestMethod.GET)
+	public String goLogin(HttpServletRequest request, HttpServletResponse response) {
+		return "login";
+	}
+	
+	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+	public String doLogin(HttpServletRequest request, HttpServletResponse response) {
+		
 		return "index";
 	}
 }

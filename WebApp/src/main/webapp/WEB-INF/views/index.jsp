@@ -29,7 +29,7 @@
 			Place to save the memories of moment.<br />
 		</p>
 		<ul class="actions">
-			<li><a href="discover.home" class="button scrolly">Discover</a></li>
+			<li><a href="login.go" class="button scrolly">Come in</a></li>
 		</ul>
 	</div>
 	</section>
@@ -140,7 +140,7 @@
 		</header>
 		<p>Sed lacus nascetur ac ante amet sapien.</p>
 		<ul class="actions uniform">
-			<li><a href="#" class="button special">Sign Up</a></li>
+			<li><a href="login.go" class="button special">Sign In</a></li>
 			<li><a href="#" class="button">Learn More</a></li>
 		</ul>
 	</div>
