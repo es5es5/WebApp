@@ -15,6 +15,11 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
+	
+	@RequestMapping(value = "/index.go", method = RequestMethod.GET)
+	public String goIndex() {
+		return "index";
+	}
 
 	@RequestMapping(value = "/login.go", method = RequestMethod.GET)
 	public String goLogin(HttpServletRequest request, HttpServletResponse response) {
@@ -23,7 +28,11 @@ public class HomeController {
 	
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
 	public String doLogin(HttpServletRequest request, HttpServletResponse response) {
-		
 		return "index";
+	}
+	
+	@RequestMapping(value = "/album.go", method = RequestMethod.GET)
+	public String goAlbum(HttpServletRequest request, HttpServletResponse response) {
+		return "album";
 	}
 }

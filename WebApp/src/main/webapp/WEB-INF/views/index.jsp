@@ -6,15 +6,15 @@
 <title>港港捞尔 成成捞</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="resources/assets/css/main.css" />
-<link rel="stylesheet" href="resources/assets/css/mycss.css" />
+<link rel="stylesheet" href="resources/index/assets/css/main.css" />
+<link rel="stylesheet" href="resources/index/assets/css/mycss.css" />
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
+<script src="assets/index/js/jquery.min.js"></script>
+<script src="assets/index/js/jquery.scrolly.min.js"></script>
+<script src="assets/index/js/skel.min.js"></script>
+<script src="assets/index/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
+<script src="assets/index/js/main.js"></script>
 </head>
 <body>
 
@@ -23,20 +23,20 @@
 	<div class="inner">
 		<span class="icon major fa-cloud"></span>
 		<h1>
-			Hello! I'm <strong>JinsLover</strong>.
+			Hello! &nbsp;&nbsp; I'm <strong>JinsLover</strong>.
 		</h1>
 		<p>
 			Place to save the memories of moment.<br />
 		</p>
 		<ul class="actions">
-			<li><a href="login.go" class="button scrolly">Come in</a></li>
+			<li><a href="album.go" class="button scrolly">Come in</a></li>
 		</ul>
 	</div>
 	</section>
 
 	<!-- #### One ####
 	-->
-	 
+
 	<section id="one" class="main style1">
 	<div class="container">
 		<div class="row 150%">
@@ -49,12 +49,13 @@
 				<p>John Sheffield.</p>
 			</div>
 			<div class="6u$ 12u$(medium) important(medium)">
-				<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+				<span class="image fit"><img src="resources/index/images/yo.jpg"
+					alt="" /></span>
 			</div>
 		</div>
 	</div>
 	</section>
-	
+
 
 	<!-- #### Two ####
 	<section id="two" class="main style2">
@@ -138,37 +139,39 @@
 	 -->
 
 	<!-- #### Four ####
+	 -->
 	<section id="four" class="main style2 special">
 	<div class="container">
 		<header class="major">
-		<h2>Ipsum feugiat consequat?</h2>
+		<h2>Join Us?</h2>
 		</header>
-		<p>Sed lacus nascetur ac ante amet sapien.</p>
+		<p>Place to save the memories of moment.</p>
 		<ul class="actions uniform">
-			<li><a href="login.go" class="button special">Sign In</a></li>
+			<li><a href="login.go" class="button special">JOIN</a></li>
+			<!-- 
 			<li><a href="#" class="button">Learn More</a></li>
+			 -->
 		</ul>
 	</div>
 	</section>
-	 -->
 
 	<!-- #### Footer #### -->
 	<section id="footer">
 	<ul class="icons">
 		<li><a href="#" class="icon alt fa-twitter"><span
 				class="label">Twitter</span></a></li>
-		<li><a href="https://www.facebook.com/WebDevShare/" class="icon alt fa-facebook"><span
-				class="label">Facebook</span></a></li>
+		<li><a href="https://www.facebook.com/WebDevShare/"
+			class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 		<li><a href="#" class="icon alt fa-instagram"><span
 				class="label">Instagram</span></a></li>
-		<li><a href="https://github.com/es5es5" class="icon alt fa-github"><span
-				class="label">GitHub</span></a></li>
-		<li><a href="mailto:essess1541@gmail.com" class="icon alt fa-envelope"><span
-				class="label">Email</span></a></li>
+		<li><a href="https://github.com/es5es5"
+			class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+		<li><a href="mailto:essess1541@gmail.com"
+			class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 	</ul>
 	<ul class="copyright">
-		<li>&copy; JinsLover⒕</li>
-		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		<li>&copy; <a href="#top">JinsLover⒕</a></li>
+		<li>Design : <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 	</ul>
 	</section>
 
