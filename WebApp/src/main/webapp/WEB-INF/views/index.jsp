@@ -23,7 +23,7 @@
 	<div class="inner">
 		<span class="icon major fa-cloud"></span>
 		<h1>
-			Hi, I'm <strong>JinsLover</strong>.
+			Hello! I'm <strong>JinsLover</strong>.
 		</h1>
 		<p>
 			Place to save the memories of moment.<br />
@@ -34,7 +34,9 @@
 	</div>
 	</section>
 
-	<!-- One -->
+	<!-- #### One ####
+	-->
+	 
 	<section id="one" class="main style1">
 	<div class="container">
 		<div class="row 150%">
@@ -52,8 +54,9 @@
 		</div>
 	</div>
 	</section>
+	
 
-	<!-- Two -->
+	<!-- #### Two ####
 	<section id="two" class="main style2">
 	<div class="container">
 		<div class="row 150%">
@@ -92,8 +95,9 @@
 		</div>
 	</div>
 	</section>
+	 -->
 
-	<!-- Three -->
+	<!-- #### Three ####
 	<section id="three" class="main style1 special">
 	<div class="container">
 		<header class="major">
@@ -131,8 +135,9 @@
 		</div>
 	</div>
 	</section>
+	 -->
 
-	<!-- Four -->
+	<!-- #### Four ####
 	<section id="four" class="main style2 special">
 	<div class="container">
 		<header class="major">
@@ -145,24 +150,24 @@
 		</ul>
 	</div>
 	</section>
+	 -->
 
-
-	<!-- Footer -->
+	<!-- #### Footer #### -->
 	<section id="footer">
 	<ul class="icons">
 		<li><a href="#" class="icon alt fa-twitter"><span
 				class="label">Twitter</span></a></li>
-		<li><a href="#" class="icon alt fa-facebook"><span
+		<li><a href="https://www.facebook.com/WebDevShare/" class="icon alt fa-facebook"><span
 				class="label">Facebook</span></a></li>
 		<li><a href="#" class="icon alt fa-instagram"><span
 				class="label">Instagram</span></a></li>
-		<li><a href="#" class="icon alt fa-github"><span
+		<li><a href="https://github.com/es5es5" class="icon alt fa-github"><span
 				class="label">GitHub</span></a></li>
-		<li><a href="#" class="icon alt fa-envelope"><span
+		<li><a href="mailto:essess1541@gmail.com" class="icon alt fa-envelope"><span
 				class="label">Email</span></a></li>
 	</ul>
 	<ul class="copyright">
-		<li>&copy; Untitled</li>
+		<li>&copy; JinsLover¢¾</li>
 		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 	</ul>
 	</section>
