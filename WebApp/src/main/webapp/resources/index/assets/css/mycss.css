@@ -8,3 +8,7 @@
 	height: 10em;
 	background-color: black;
 }
+
+a {
+	text-decoration: none;
+}

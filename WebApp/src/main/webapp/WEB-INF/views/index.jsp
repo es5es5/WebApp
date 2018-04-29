@@ -21,7 +21,7 @@
 	<!-- Header -->
 	<section id="header">
 	<div class="inner">
-		<span class="icon major fa-cloud"></span>
+		<a href="index.go" id="mainCloud"><span class="icon major fa-cloud"></span></a>
 		<h1>
 			Hello! &nbsp;&nbsp; I'm <strong>JinsLover</strong>.
 		</h1>
@@ -49,8 +49,8 @@
 				<p>John Sheffield.</p>
 			</div>
 			<div class="6u$ 12u$(medium) important(medium)">
-				<span class="image fit"><img src="resources/index/images/yo.jpg"
-					alt="" /></span>
+				<span class="image fit"><img
+					src="resources/index/images/yo.jpg" alt="" /></span>
 			</div>
 		</div>
 	</div>
@@ -171,7 +171,8 @@
 	</ul>
 	<ul class="copyright">
 		<li>&copy; <a href="#top">JinsLover¢¾</a></li>
-		<li>Design : <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+		<li>Design : <a href="http://html5up.net" target="_blank">HTML5
+				UP</a></li>
 	</ul>
 	</section>
 
