@@ -35,4 +35,9 @@ public class HomeController {
 	public String goAlbum(HttpServletRequest request, HttpServletResponse response) {
 		return "album";
 	}
+	
+	@RequestMapping(value = "/join.go", method = RequestMethod.GET)
+	public String goJoin(HttpServletRequest request, HttpServletResponse response) {
+		return "join";
+	}
 }

@@ -14,3 +14,9 @@ Servers/
 RemoteSystemsTempFiles/
 MANIFEST.MF
 pom.properties
+*.properties
+*.MF
+MANIFEST
+/MANIFEST.MF
+**/MANIFEST.MF
+**/MANIFEST.*
