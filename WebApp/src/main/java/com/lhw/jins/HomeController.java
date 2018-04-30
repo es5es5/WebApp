@@ -21,23 +21,9 @@ public class HomeController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/login.go", method = RequestMethod.GET)
-	public String goLogin(HttpServletRequest request, HttpServletResponse response) {
-		return "login";
-	}
-	
-	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public String doLogin(HttpServletRequest request, HttpServletResponse response) {
-		return "index";
-	}
-	
 	@RequestMapping(value = "/album.go", method = RequestMethod.GET)
 	public String goAlbum(HttpServletRequest request, HttpServletResponse response) {
 		return "album";
 	}
-	
-	@RequestMapping(value = "/join.go", method = RequestMethod.GET)
-	public String goJoin(HttpServletRequest request, HttpServletResponse response) {
-		return "join";
-	}
+
 }
