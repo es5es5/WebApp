@@ -58,35 +58,3 @@ function isNotType(field, type){
 	// field.value // 업로드 하려는 파일명 xxx.PNG
 	return (field.value.toLowerCase().indexOf(type) == -1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

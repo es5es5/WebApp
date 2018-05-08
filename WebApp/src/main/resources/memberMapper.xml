@@ -4,8 +4,9 @@
 	<insert id="join" parameterType="com.lhw.jins.member.Member">
 		insert into jins_member
 		values(
-		#{jm_id},
-		#{jm_pw}
+		#{name},
+		#{email},
+		#{pw}
 		)
 	</insert>
 </mapper>

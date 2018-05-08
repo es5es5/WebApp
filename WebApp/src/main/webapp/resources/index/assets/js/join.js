@@ -1,44 +1,26 @@
 function joinCheck() {
-	var idField = document.joinForm.email;
-	var pwField = document.joinForm.password;
-	var pwChkField = document.joinForm.password2;
 	var nameField = document.joinForm.name;
+	var idField = document.joinForm.email;
+	var pwField = document.joinForm.pw;
+	var pwChkField = document.joinForm.pw2;
 
-	if ($("#joinIDResult").text() == "ID ì¤‘ë³µ" || isEmpty(idField)
-			|| containsHangul(idField)) {
-		alert("id í™•ì¸");
+	if (isEmpty(idField) || containsHangul(idField)) {
+		alert("E-MAIL ÀÔ·Â ¿À·ù");
 		idField.value = "";
 		idField.focus();
 		return false;
 	} else if (isEmpty(pwField) || notEquals(pwField, pwChkField)
 			|| lessThan(pwField, 4) || notContains(pwField, "1234567890")
-			|| notContains(pwField, "qwertyuiopasdfghjklzxcvbnm")
-			|| notContains(pwField, "QWERTYUIOPASDFGHJKLZXCVBNM")) {
-		alert("pw í™•ì¸");
+			|| notContains(pwField, "qwertyuiopasdfghjklzxcvbnm")) {
+		alert("ºñ¹Ğ¹øÈ£ È®ÀÎÀÌ ´Ù¸¨´Ï´Ù. ");
 		pwField.value = "";
 		pwChkField.value = "";
 		pwField.focus();
 		return false;
 	} else if (isEmpty(nameField)) {
-		alert("ì´ë¦„ í™•ì¸");
+		alert("ÀÌ¸§Àº ÇÊ¼ö ÀÔ·ÂÀÔ´Ï´Ù.");
 		nameField.value = "";
 		nameField.focus();
-		return false;
-	} else if (isEmpty(addr1Field) || isEmpty(addr2Field)
-			|| isEmpty(addr3Field)) {
-		alert("ì£¼ì†Œ í™•ì¸");
-		addr1Field.value = "";
-		addr2Field.value = "";
-		addr3Field.value = "";
-		addr3Field.focus();
-		return false;
-	} else if (isEmpty(imgField)
-			|| (isNotType(imgField, ".png") && isNotType(imgField, ".gif")
-					&& isNotType(imgField, ".jpg") && isNotType(imgField,
-					".bmp"))) {
-		alert("ì‚¬ì§„ í™•ì¸");
-		imgField.value = "";
-		imgField.focus();
 		return false;
 	}
 	return true;
@@ -48,12 +30,12 @@ function loginCheck() {
 	var pwField = document.loginForm.im_pw;
 
 	if (isEmpty(idField)) {
-		alert("id í™•ì¸");
+		alert("id È®ÀÎ");
 		idField.value = "";
 		idField.focus();
 		return false;
 	} else if (isEmpty(pwField)) {
-		alert("pw í™•ì¸");
+		alert("pw È®ÀÎ");
 		pwField.value = "";
 		pwField.focus();
 		return false;

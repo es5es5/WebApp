@@ -6,34 +6,57 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Member {
 
-	private String jm_id;
-	private String jm_pw;
-
+	private String name;
+	private String email;
+	private String pw;
+	private String pw2;
+	
 	public Member() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public Member(String jm_id, String jm_pw) {
+	
+	public Member(String name, String email, String pw, String pw2) {
 		super();
-		this.jm_id = jm_id;
-		this.jm_pw = jm_pw;
+		this.name = name;
+		this.email = email;
+		this.pw = pw;
+		this.pw2 = pw2;
 	}
 
-	public String getJm_id() {
-		return jm_id;
-	}
-
-	@XmlElement
-	public void setJm_id(String jm_id) {
-		this.jm_id = jm_id;
-	}
-
-	public String getJm_pw() {
-		return jm_pw;
+	public String getName() {
+		return name;
 	}
 
 	@XmlElement
-	public void setJm_pw(String jm_pw) {
-		this.jm_pw = jm_pw;
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	@XmlElement
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPw() {
+		return pw;
+	}
+
+	@XmlElement
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
+
+	public String getPw2() {
+		return pw2;
+	}
+
+	@XmlElement
+	public void setPw2(String pw2) {
+		this.pw2 = pw2;
+	}
+	
 }

@@ -28,9 +28,9 @@
 	<beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<beans:property name="url"
-			value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<beans:property name="username" value="lhw" />
-		<beans:property name="password" value="lhw" />
+			value="jdbc:oracle:thin:@112.150.121.158:1521:orclServer" />
+		<beans:property name="username" value="gusdn" />
+		<beans:property name="password" value="gusdn" />
 	</beans:bean>
 
 	<beans:bean id="transactionManager"
@@ -44,6 +44,7 @@
 		<beans:property name="mapperLocations">
 			<beans:list>
 				<beans:value>classpath:mapper.xml</beans:value>
+				<beans:value>classpath:memberMapper.xml</beans:value>
 			</beans:list>
 		</beans:property>
 	</beans:bean>

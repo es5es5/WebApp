@@ -14,8 +14,9 @@ public class MemberDAO {
 
 	public void join(Member m, HttpServletRequest request, HttpServletResponse response) {
 		try {
-			m.setJm_id(request.getParameter("jm_id"));
-			m.setJm_id(request.getParameter("jm_pw"));
+			m.setName(request.getParameter("name"));
+			m.setEmail(request.getParameter("email"));
+			m.setPw(request.getParameter("pw"));
 
 			if (ss.getMapper(MemberMapper.class).join(m) == 1) {
 				System.out.println("가입 성공");

@@ -35,7 +35,8 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/join.do", method = RequestMethod.POST)
-	public String doJoin(HttpServletRequest request, HttpServletResponse response) {
+	public String doJoin(Member m, HttpServletRequest request, HttpServletResponse response) {
+		mDAO.join(m, request, response);
 		return "index";
 	}
 }
