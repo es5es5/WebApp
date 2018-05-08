@@ -25,6 +25,16 @@ function containsHangul(field) {
 	return false;
 }
 
+function emailCheck(field) {
+	var t = "1234567890qwertyuiopasdfghjklzxcvbnm@.";
+	for (var i = 0; i < field.value.length; i++) {
+		if (t.indexOf(field.value.toLowerCase()[i]) == -1) {
+			return true;
+		}
+	}
+	return false;
+}
+
 // <input>, 문자열 세트 넣으면
 // 그 input에 문자열에 있는 글자가 없으면 true
 // 그 input에 문자열에 있는 글자가 있으면 false

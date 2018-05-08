@@ -4,7 +4,7 @@ function joinCheck() {
 	var pwField = document.joinForm.pw;
 	var pwChkField = document.joinForm.pw2;
 
-	if (isEmpty(idField) || containsHangul(idField)) {
+	if (isEmpty(idField) || emailCheck(idField)) {
 		alert("E-MAIL 입력 오류");
 		idField.value = "";
 		idField.focus();
