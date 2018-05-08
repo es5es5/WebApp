@@ -120,6 +120,48 @@
 				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
 					Integer id venenatis velit.</p>
 			</article>
+			<article class="thumb">
+				<a href="resources/album/images/fulls/13.jpg" class="image"><img
+					src="resources/album/images/thumbs/13.jpg" alt="" /></a>
+				<h2>Vehicula id nulla dignissim</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
+					Integer id venenatis velit.</p>
+			</article>
+			<article class="thumb">
+				<a href="resources/album/images/fulls/14.jpg" class="image"><img
+					src="resources/album/images/thumbs/14.jpg" alt="" /></a>
+				<h2>Vehicula id nulla dignissim</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
+					Integer id venenatis velit.</p>
+			</article>
+			<article class="thumb">
+				<a href="resources/album/images/fulls/15.jpg" class="image"><img
+					src="resources/album/images/thumbs/15.jpg" alt="" /></a>
+				<h2>Vehicula id nulla dignissim</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
+					Integer id venenatis velit.</p>
+			</article>
+			<article class="thumb">
+				<a href="resources/album/images/fulls/16.jpg" class="image"><img
+					src="resources/album/images/thumbs/16.jpg" alt="" /></a>
+				<h2>Vehicula id nulla dignissim</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
+					Integer id venenatis velit.</p>
+			</article>
+			<article class="thumb">
+				<a href="resources/album/images/fulls/17.jpg" class="image"><img
+					src="resources/album/images/thumbs/17.jpg" alt="" /></a>
+				<h2>Vehicula id nulla dignissim</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
+					Integer id venenatis velit.</p>
+			</article>
+			<article class="thumb">
+				<a href="resources/album/images/fulls/18.jpg" class="image"><img
+					src="resources/album/images/thumbs/18.jpg" alt="" /></a>
+				<h2>Vehicula id nulla dignissim</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
+					Integer id venenatis velit.</p>
+			</article>
 		</div>
 
 		<!-- Footer -->

@@ -4,7 +4,6 @@
 <html>
 <head>
 <title>港港捞尔 成成捞</title>
-<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="resources/index/assets/css/main.css" />
 <link rel="stylesheet" href="resources/index/assets/css/mycss.css" />

@@ -1,5 +1,5 @@
 function joinCheck() {
-	var idField = document.joinForm.id;
+	var idField = document.joinForm.email;
 	var pwField = document.joinForm.password;
 	var pwChkField = document.joinForm.password2;
 	var nameField = document.joinForm.name;
