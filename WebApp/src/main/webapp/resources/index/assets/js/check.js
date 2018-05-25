@@ -1,15 +1,13 @@
 function loginCheck() {
 	var idField = document.loginForm.username;
 	var pwField = document.loginForm.password;
-
-	alert("in to the check.js");
 	if (isEmpty(idField)) {
-		alert("IDë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
+		alert("ID¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 		idField.value = "";
 		idField.focus();
 		return false;
 	} else if (isEmpty(pwField)) {
-		alert("PWë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
+		alert("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 		pwField.value = "";
 		pwField.focus();
 		return false;

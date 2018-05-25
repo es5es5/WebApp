@@ -10,16 +10,17 @@
 	src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
 <script type="text/javascript" src="resources/index/assets/js/login.js"></script>
+<script type="text/javascript" src="resources/validCheck.js"></script>
 <script type="text/javascript" src="resources/index/assets/js/check.js"></script>
 
 </head>
 <body>
 	<form id="slick-login" action="login.do" method="post" name="loginForm" onsubmit="return loginCheck();">
 		<label for="username">ID</label><input type="text"
-			name="username" class="placeholder" placeholder="username@jinslover.com" autofocus="autofocus">
+			name="email" class="placeholder" placeholder="username@jinslover.com" autofocus="autofocus">
 		<label for="password">PASSWORD</label><input type="password"
-			name="password" class="placeholder" placeholder="password"> <input
-			type="submit" value="Sign In">
+			name="pw" class="placeholder" placeholder="password"> <input
+			type="submit" value="LOGIN">
 	</form>
 </body>
 </html>

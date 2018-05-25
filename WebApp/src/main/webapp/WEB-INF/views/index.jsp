@@ -147,6 +147,7 @@
 		<p>Place to save the memories of moment.</p>
 		<ul class="actions uniform">
 			<li><a href="join.go" class="button special">JOIN</a></li>
+			<li><a href="login.go" class="button special">LOGIN</a></li>
 			<!-- 
 			<li><a href="#" class="button">Learn More</a></li>
 			 -->

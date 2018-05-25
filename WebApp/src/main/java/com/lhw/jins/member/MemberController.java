@@ -25,7 +25,8 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public String doLogin(HttpServletRequest request, HttpServletResponse response) {
+	public String doLogin(Member m, HttpServletRequest request, HttpServletResponse response) {
+		mDAO.login(m, request, response);
 		return "index";
 	}
 

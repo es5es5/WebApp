@@ -9,4 +9,10 @@
 		#{pw}
 		)
 	</insert>
+	<select id="getMemberByEmail"
+		parameterType="com.lhw.jins.member.Member"
+		resultType="com.lhw.jins.member.Member">
+		select * from jins_member
+		where email=#{email}
+	</select>
 </mapper>
