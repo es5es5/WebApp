@@ -15,5 +15,4 @@ create table jins_album(
 create sequence jins_album_seq;
 select * from JINS_album;
 ----------------------------------------------------
-
 select * from jins_member where email='jins@jinslover.com';
