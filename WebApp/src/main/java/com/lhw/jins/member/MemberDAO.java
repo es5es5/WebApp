@@ -53,5 +53,15 @@ public class MemberDAO {
 		}
 	}
 	
-	
+	public boolean loginCheck(HttpServletRequest request, HttpServletResponse response) {
+		Member m = (Member) request.getSession().getAttribute("loginMember");
+		
+		if (m != null) {
+			System.out.println(m.getName() + "가 로그인 돼있음");
+			return true;
+		} else {
+			System.out.println("로그인 안됨");
+			return false;
+		}
+	}
 }

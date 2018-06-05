@@ -12,3 +12,20 @@
 a {
 	text-decoration: none;
 }
+
+@font-face {
+	font-family: "babylove";
+	src: url('../fonts/babylove.ttf');
+}
+
+#showLoginMember {
+	position: fixed;
+	width: 10em;
+	height: 10em;
+	top: 0px;
+	right: 0px;
+	color: black;
+	font-family: "babylove";
+	z-index: 9999;
+}
+

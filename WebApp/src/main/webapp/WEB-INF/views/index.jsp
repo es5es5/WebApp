@@ -17,10 +17,16 @@
 </head>
 <body>
 
+	<!-- Show Login Member -->
+	<div id="showLoginMember">
+	${sessionScope.loginMember.email }가 로그인 됐습니다.
+	</div>
+
 	<!-- Header -->
 	<section id="header">
 	<div class="inner">
-		<a href="index.go" id="mainCloud"><span class="icon major fa-cloud"></span></a>
+		<a href="index.go" id="mainCloud"><span
+			class="icon major fa-cloud"></span></a>
 		<h1>
 			Hello! &nbsp;&nbsp; I'm <strong>JinsLover</strong>.
 		</h1>
@@ -33,9 +39,7 @@
 	</div>
 	</section>
 
-	<!-- #### One ####
-	-->
-
+	<!-- #### One ####	-->
 	<section id="one" class="main style1">
 	<div class="container">
 		<div class="row 150%">
