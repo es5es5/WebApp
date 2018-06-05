@@ -18,4 +18,8 @@
 			album_txt = #{album_txt}
 		WHERE album_no=#{album_no}
 	</update>
+	<select id="selectAlbum" parameterType="com.lhw.jins.album.Album" resultType="com.lhw.jins.album.Album">
+	SELECT *
+	FROM jins_album
+	</select>
 </mapper>

@@ -1,6 +1,7 @@
 package com.lhw.jins.album;
 
 import java.net.URLEncoder;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -66,6 +67,11 @@ public class AlbumDAO {
 			e.printStackTrace();
 			System.out.println("DB서버 문제");
 		}
+	}
+	
+	public void showAllAlbum(HttpServletRequest request, HttpServletResponse response) {
+		List<Album> albumList = ss.getMapper(AlbumMapper.class).selectAlbum();
+		request.setAttribute("albumList", albumList);
 	}
 	
 	public void delete(Album album, HttpServletRequest request, HttpServletResponse response) {
