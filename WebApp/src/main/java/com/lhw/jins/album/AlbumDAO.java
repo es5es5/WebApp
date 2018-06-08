@@ -1,7 +1,6 @@
 package com.lhw.jins.album;
 
 import java.net.URLEncoder;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,8 +11,6 @@ import org.springframework.stereotype.Service;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-
-import com.lhw.jins.album.Album;
 
 @Service
 public class AlbumDAO {
@@ -74,8 +71,7 @@ public class AlbumDAO {
 	}
 	
 	public void getAllAlbum(HttpServletRequest request, HttpServletResponse response) {
-		List<Album> albumList = ss.getMapper(AlbumMapper.class).selectAlbum();
-		request.setAttribute("albumList", albumList);
+		request.setAttribute("albumList", ss.getMapper(AlbumMapper.class).selectAlbum());
 	}
 	
 	public void delete(Album album, HttpServletRequest request, HttpServletResponse response) {
