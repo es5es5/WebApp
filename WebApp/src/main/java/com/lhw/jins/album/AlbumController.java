@@ -15,6 +15,8 @@ public class AlbumController {
 
 	@Autowired
 	private AlbumDAO aDAO;
+	
+
 
 	@RequestMapping(value = "/album.insert", method = RequestMethod.GET)
 	public String albumInsert(Album album, HttpServletRequest request, HttpServletResponse response) {

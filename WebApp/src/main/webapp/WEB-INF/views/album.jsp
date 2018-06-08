@@ -40,11 +40,10 @@
 		<div id="main">
 		<c:forEach var="album" items="${albumList }">
 			<article class="thumb"> <a
-				href="" class="image"><img
-				src="resources/album/images/thumbs/${album.album_img }" alt="" /></a>
-			<h2>Magna feugiat lorem</h2>
-			<p>Nunc blandit nisi ligula magna sodales lectus elementum non.
-				Integer id venenatis velit.</p>
+				href="resources/album/images/fulls/${album.ALBUM_IMG }" class="image"><img
+				src="resources/album/images/thumbs/${album.ALBUM_IMG }" alt="" /></a>
+			<h2>${album.ALBUM_TXT1 }</h2>
+			<p>${album.ALBUM_TXT2 }</p>
 			</article>
 		</c:forEach>
 		</div>

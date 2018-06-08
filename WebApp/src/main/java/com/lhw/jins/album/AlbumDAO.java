@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
+import com.lhw.jins.album.Album;
+
 @Service
 public class AlbumDAO {
 
@@ -30,7 +32,8 @@ public class AlbumDAO {
 			album_img = album_img.replace("+", " ");
 
 			album.setAlbum_img(album_img);
-			album.setAlbum_txt(mr.getParameter("album_txt"));
+			album.setAlbum_txt1(mr.getParameter("album_txt1"));
+			album.setAlbum_txt2(mr.getParameter("album_txt2"));
 
 			if (ss.getMapper(AlbumMapper.class).insertAlbum(album) == 1) {
 				System.out.println("사진 INSERT 성공");
@@ -50,13 +53,14 @@ public class AlbumDAO {
 			String path = request.getSession().getServletContext().getRealPath("resource/album/images/fulls");
 			MultipartRequest mr = new MultipartRequest(request, path, 31457280, // 30*1024*1024
 					"euc-kr", new DefaultFileRenamePolicy());
-			String jins_img = mr.getFilesystemName("im_img");
+			String jins_img = mr.getFilesystemName("album_img");
 			if (jins_img != null) {
 				jins_img = URLEncoder.encode(jins_img, "euc-kr");
 				jins_img = jins_img.replace("+", " ");
 			}
 			album.setAlbum_img(jins_img);
-			album.setAlbum_txt(mr.getParameter("jins_txt"));
+			album.setAlbum_txt1(mr.getParameter("album_txt1"));
+			album.setAlbum_txt2(mr.getParameter("album_txt2"));
 			
 			if (ss.getMapper(AlbumMapper.class).updateAlbum(album) == 1) {
 				System.out.println("사진 수정 성공");
@@ -69,7 +73,7 @@ public class AlbumDAO {
 		}
 	}
 	
-	public void showAllAlbum(HttpServletRequest request, HttpServletResponse response) {
+	public void getAllAlbum(HttpServletRequest request, HttpServletResponse response) {
 		List<Album> albumList = ss.getMapper(AlbumMapper.class).selectAlbum();
 		request.setAttribute("albumList", albumList);
 	}
