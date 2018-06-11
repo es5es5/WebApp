@@ -71,7 +71,7 @@ public class AlbumDAO {
 	}
 	
 	public void getAllAlbum(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("albumList", ss.getMapper(AlbumMapper.class).selectAlbum());
+//		request.setAttribute("albumList", ss.getMapper(AlbumMapper.class).selectAlbum());
 	}
 	
 	public void delete(Album album, HttpServletRequest request, HttpServletResponse response) {

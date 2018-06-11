@@ -38,14 +38,29 @@
 
 		<!-- Main -->
 		<div id="main">
-		<c:forEach var="album" items="${albumList }">
+
+			<!-- No DB -->
 			<article class="thumb"> <a
-				href="resources/album/images/fulls/${album.album_img }" class="image"><img
-				src="resources/album/images/thumbs/${album.album_img }" alt="" /></a>
-			<h2>${album.album_txt1 }</h2>
-			<p>${album.album_txt2 }</p>
+				href="resources/album/images/fulls/01.jpg" class="image"><img
+				src="resources/album/images/fulls/01.jpg" alt="" /></a>
+			<h2>Title</h2>
+			<p>Something text...</p>
+			<p>2018-05-05</p>
 			</article>
-		</c:forEach>
+
+			<!-- Using DB 		
+			<c:forEach var="album" items="${albumList }">
+				<article class="thumb"> <a
+					href="resources/album/images/fulls/${album.album_img }" class="image"><img
+					src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
+				<h2>${album.album_txt1 }</h2>
+				<p>${album.album_txt2 }</p>
+				<p>${album.album_date }</p>
+				</article>
+			</c:forEach>
+			-->
+
+
 		</div>
 
 		<!-- Footer -->
