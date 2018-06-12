@@ -13,8 +13,8 @@ create table jins_album(
 	album_txt1 varchar2(300 char),
 	album_txt2 varchar2(300 char)
 );
-create sequence jins_album_seq;
 SELECT * FROM jins_album;
+create sequence jins_album_seq;
 insert into jins_album values(jins_album_seq.nextval, '12.jpg', sysdate, 'text1', 'text2');
 drop table jins_album cascade constraint purge;
 ----------------------------------------------------

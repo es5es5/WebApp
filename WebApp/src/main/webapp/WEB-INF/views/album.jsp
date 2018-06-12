@@ -11,6 +11,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="resources/album/assets/css/main.css" />
+<link rel="stylesheet" href="resources/album/assets/css/mycss.css" />
 
 <!-- Scripts -->
 <script src="resources/album/assets/js/jquery.min.js"></script>
@@ -19,6 +20,8 @@
 <script src="resources/album/assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="resources/album/assets/js/main.js"></script>
+<script src="resources/album/assets/js/myjs.js"></script>
+
 </head>
 <body>
 
@@ -32,14 +35,15 @@
 		</h1>
 		<nav>
 		<ul>
-			<li><a href="#" class="icon fa-info-circle">About</a></li>
+			<li><a href="#insert_photo" class="icon fa-info-circle">INSERT
+					PHOTO</a></li>
 		</ul>
 		</nav> </header>
 
 		<!-- Main -->
 		<div id="main">
 
-			<!-- No DB -->
+			<!-- No DB 
 			<article class="thumb"> <a
 				href="resources/album/images/fulls/01.jpg" class="image"><img
 				src="resources/album/images/fulls/01.jpg" alt="" /></a>
@@ -47,21 +51,52 @@
 			<p>Something text...</p>
 			<p>2018-05-05</p>
 			</article>
+			-->
 
-			<!-- Using DB 		
+			<!-- Using DB (DAO üũ) -->
 			<c:forEach var="album" items="${albumList }">
 				<article class="thumb"> <a
-					href="resources/album/images/fulls/${album.album_img }" class="image"><img
+					href="resources/album/images/fulls/${album.album_img }"
+					class="image"><img
 					src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
 				<h2>${album.album_txt1 }</h2>
 				<p>${album.album_txt2 }</p>
 				<p>${album.album_date }</p>
 				</article>
 			</c:forEach>
-			-->
-
 
 		</div>
+
+
+		<!-- Insert Photo -->
+		<footer id="insert_photo" class="panel">
+		<div class="inner split">
+			<div></div>
+			<div>
+				<section>
+				<h2>INSERT PHOTO</h2>
+				<form action="album.insert" method="post"
+					enctype="multipart/form-data" name="insertPhotoForm" onsubmit="insertPhotoCheck();">
+					<div class="field half first">
+						<input type="text" name="txt1" id="name" placeholder="TITLE" />
+					</div>
+					<div class="filebox bs3-primary preview-image">
+						<input type="file" name="img" id="input_file" class="upload-hidden">
+					</div>
+					<div class="field">
+						<textarea name="txt2" id="message" rows="4"
+							placeholder="A description of this photo."></textarea>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="INSERT" class="special" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+				</section>
+			</div>
+		</div>
+		</footer>
+
 
 		<!-- Footer -->
 		<footer id="footer" class="panel">

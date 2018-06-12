@@ -31,7 +31,7 @@ public class AlbumController {
 		// return "index";
 
 		aDAO.insert(album, request, response);
-		return "index";
+		return "album";
 	}
 	
 	@RequestMapping(value = "/album.update", method = RequestMethod.GET)
