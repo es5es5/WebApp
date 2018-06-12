@@ -10,7 +10,7 @@
 		parameterType="com.lhw.jins.album.Album">
 		INSERT INTO jins_album
 		values(
-		jins_album_seq,
+		jins_album_seq.nextval,
 		#{album_img}, sysdate, #{album_txt1}, #{album_txt2}
 		)
 	</insert>

@@ -20,9 +20,8 @@ public class AlbumDAO {
 
 	public void insert(Album album, HttpServletRequest request, HttpServletResponse response) {
 		try {
-			String path = request.getSession().getServletContext().getRealPath("resource/album/images/fulls");
-			MultipartRequest mr = new MultipartRequest(request, path, 31457280, // 30*1024*1024
-					"euc-kr", new DefaultFileRenamePolicy());
+			String path = request.getSession().getServletContext().getRealPath("resources/album/images/fulls");
+			MultipartRequest mr = new MultipartRequest(request, path, 31457280,	"euc-kr", new DefaultFileRenamePolicy());
 
 			String album_img = mr.getFilesystemName("album_img");
 			album_img = URLEncoder.encode(album_img, "euc-kr");

@@ -78,13 +78,13 @@
 				<form action="album.insert" method="post"
 					enctype="multipart/form-data" name="insertPhotoForm" onsubmit="insertPhotoCheck();">
 					<div class="field half first">
-						<input type="text" name="txt1" id="name" placeholder="TITLE" />
+						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />
 					</div>
 					<div class="filebox bs3-primary preview-image">
-						<input type="file" name="img" id="input_file" class="upload-hidden">
+						<input type="file" name="album_img" id="input_file" class="upload-hidden">
 					</div>
 					<div class="field">
-						<textarea name="txt2" id="message" rows="4"
+						<textarea name="album_txt2" id="message" rows="4"
 							placeholder="A description of this photo."></textarea>
 					</div>
 					<ul class="actions">
