@@ -287,7 +287,7 @@
                 /* album close */
                 // alert('282 Close');
                 $body.removeClass('modal-active');
-                // var ok = confirm("吏꾩쭨?");
+                // var ok = confirm("진짜?");
                 // if (ok) {
                 // location.href = "album.delete?album_no="
                 // }
@@ -306,11 +306,12 @@
             popupWidth: 150,
             selector: '.thumb > a.image',
             usePopupCaption: true,
-            usePopupCloser: true,
+            usePopupCloser: true,	// 클로저 설정
             usePopupDefaultStyling: false,
             usePopupForceClose: true,
             usePopupLoader: true,
             usePopupNav: true,
+            useDeleteButton: true,
             windowMargin: 50
         });
 

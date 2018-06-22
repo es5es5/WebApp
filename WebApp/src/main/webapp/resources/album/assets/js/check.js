@@ -11,3 +11,10 @@ function insertPhotoCheck() {
 	}
 	return true;
 }
+
+function deletePhoto(album_no) {
+	var ok = confirm("진짜 삭제?");
+	if (ok) {
+		location.href = "deletePhoto?album_no=" + album_no;
+	}
+}

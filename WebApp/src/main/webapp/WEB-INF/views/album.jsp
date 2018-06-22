@@ -20,7 +20,7 @@
 <script src="resources/album/assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="resources/album/assets/js/main.js"></script>
-<script src="resources/album/assets/js/myjs.js"></script>
+<script src="resources/album/assets/js/check.js"></script>
 
 </head>
 <body>
@@ -55,9 +55,8 @@
 
 			<!-- Using DB (DAO üũ) -->
 			<c:forEach var="album" items="${albumList }">
-
-				<article class="thumb"> <a href="resources/album/images/fulls/${album.album_img }"
-					class="image"> <img	src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
+				<article class="thumb"> <a href="resources/album/images/fulls/${album.album_img }" class="image">
+				<img src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
 				<h2>${album.album_txt1 }</h2>
 				<p>${album.album_txt2 }</p>
 				<p>${album.album_date }</p>
