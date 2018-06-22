@@ -50,18 +50,11 @@ public class AlbumController {
 		return "index";
 	}
 	
+	
+	// 비동기식으로 구현해야될 필요가 있음.
 	@RequestMapping(value = "/album.delete", method = RequestMethod.GET)
 	public String albumDelete(Album album, HttpServletRequest request, HttpServletResponse response) {
-
-//		if (mDAO.loginCheck(req, res)) {
-//			sDAO.deleteSNSRepl(sr, req, res);
-//		}
-//		sDAO.getAllSNSMsg(req, res);
-//		req.getSession().setAttribute("contentPage", "home.jsp");
-//		cDAO.getMsg(req, res);
-//		return "index";
-
 		aDAO.delete(album, request, response);
-		return "index";
+		return "album";
 	}
 }

@@ -74,6 +74,6 @@ public class AlbumDAO {
 	}
 	
 	public void delete(Album album, HttpServletRequest request, HttpServletResponse response) {
-		
+		request.setAttribute("albumList", ss.getMapper(AlbumMapper.class).deleteAlbum(album));
 	}
 }

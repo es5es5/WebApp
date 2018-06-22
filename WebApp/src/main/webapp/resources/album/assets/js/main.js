@@ -287,10 +287,6 @@
                 /* album close */
                 // alert('282 Close');
                 $body.removeClass('modal-active');
-                // var ok = confirm("ÁøÂ¥?");
-                // if (ok) {
-                // location.href = "album.delete?album_no="
-                // }
             },
             onPopupOpen: function() {
                 /* album open */
