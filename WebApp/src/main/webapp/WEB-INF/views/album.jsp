@@ -55,10 +55,9 @@
 
 			<!-- Using DB (DAO üũ) -->
 			<c:forEach var="album" items="${albumList }">
-				<article class="thumb"> <a
-					href="resources/album/images/fulls/${album.album_img }"
-					class="image"><img
-					src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
+
+				<article class="thumb"> <a href="resources/album/images/fulls/${album.album_img }"
+					class="image"> <img	src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
 				<h2>${album.album_txt1 }</h2>
 				<p>${album.album_txt2 }</p>
 				<p>${album.album_date }</p>
@@ -76,12 +75,14 @@
 				<section>
 				<h2>INSERT PHOTO</h2>
 				<form action="album.insert" method="post"
-					enctype="multipart/form-data" name="insertPhotoForm" onsubmit="insertPhotoCheck();">
+					enctype="multipart/form-data" name="insertPhotoForm"
+					onsubmit="insertPhotoCheck();">
 					<div class="field half first">
 						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />
 					</div>
 					<div class="filebox bs3-primary preview-image">
-						<input type="file" name="album_img" id="input_file" class="upload-hidden">
+						<input type="file" name="album_img" id="input_file"
+							class="upload-hidden">
 					</div>
 					<div class="field">
 						<textarea name="album_txt2" id="message" rows="4"
