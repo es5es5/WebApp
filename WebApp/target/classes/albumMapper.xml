@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lhw.jins.album.AlbumMapper">
-	<select id="selectAlbum"
-		resultType="com.lhw.jins.album.Album">
+	<select id="selectAlbum" resultType="com.lhw.jins.album.Album">
 		SELECT * FROM jins_album
 	</select>
 
 	<insert id="insertAlbum"
 		parameterType="com.lhw.jins.album.Album">
 		INSERT INTO jins_album
-		values(        
+		values(
 		jins_album_seq.nextval,
-		#{album_img}, sysdate, #{album_txt1}, #{album_txt2}
+		#{album_img},
+		(SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHmmss') as curDate FROM dual),
+		{album_txt1},
+		{album_txt2}
 		)
 	</insert>
 
@@ -27,6 +29,7 @@
 		SET album_img = #{album_img},
 		album_date = sysdate,
 		album_txt = #{album_txt}
-		WHERE album_no=#{album_no}
+		WHERE
+		album_no=#{album_no}
 	</update>
 </mapper>
