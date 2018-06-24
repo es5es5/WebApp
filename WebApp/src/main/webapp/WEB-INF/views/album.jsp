@@ -59,12 +59,11 @@
 				<img src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
 				<h2>${album.album_txt1 }</h2>
 				<p>${album.album_txt2 }</p>
-				<p>
+				<p align="right">
 				<fmt:formatDate value="${album.album_date }" type="both" dateStyle="long" timeStyle="short"/>
 				</p>
 				</article>
 			</c:forEach>
-
 		</div>
 
 
@@ -156,7 +155,7 @@
 			</div>
 		</div>
 		</footer>
-
+		
 	</div>
 
 </body>

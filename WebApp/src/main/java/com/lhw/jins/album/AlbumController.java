@@ -18,10 +18,10 @@ public class AlbumController {
 	@Autowired
 	private AlbumDAO aDAO;
 
+	// 로그인 Check 구현 필요
 	@RequestMapping(value = "/album.insert", method = RequestMethod.POST)
 	public String albumInsert(Album album, HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("컨트롤러 들어옴");
-		// 로그인 Check 구현 예정
 		// if (mDAO.loginCheck(request, respond)) {}
 		// sDAO.writeSNSMsg(sm, request, respond);
 
@@ -35,9 +35,9 @@ public class AlbumController {
 		return "album";
 	}
 	
+	// 로그인 Check 구현 필요
 	@RequestMapping(value = "/album.update", method = RequestMethod.POST)
 	public String albumUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
-
 //		if (mDAO.loginCheck(req, res)) {
 //			sDAO.updateSNSMsg(sm, req, res);
 //		}
@@ -50,11 +50,11 @@ public class AlbumController {
 		return "index";
 	}
 	
-	
 	// 비동기식으로 구현해야될 필요가 있음.
 	@RequestMapping(value = "/album.delete", method = RequestMethod.GET)
 	public String albumDelete(Album album, HttpServletRequest request, HttpServletResponse response) {
 		aDAO.delete(album, request, response);
+		aDAO.getAllAlbum(request, response);
 		return "album";
 	}
 }

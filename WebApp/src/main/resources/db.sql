@@ -20,18 +20,11 @@ drop table jins_album cascade constraint purge;
 ----------------------------------------------------
 select * from jins_member where email='jins@jinslover.com';
 ----------------------------------------------------
-SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHmmss') as curDate FROM dual;
-
-
 INSERT INTO jins_album(album_no, album_img, album_date, album_txt1, album_txt2)
 values(
-jins_album_seq.nextval,
-'01.jpg',
-(SELECT TO_CHAR(SYSDATE, 'YYYY/MM/DD') FROM DUAL),
-'TEST1',
-'TEST11'
+	jins_album_seq.nextval,
+	#{album_img},
+	sysdate,
+	#{album_txt1},
+	#{album_txt2}
 );
-
-SELECT TO_CHAR(SYSDATE, 'YYYY/MM/DD') FROM DUAL;
-
-select sysdate from dual;

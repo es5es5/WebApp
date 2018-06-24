@@ -13,7 +13,7 @@ function insertPhotoCheck() {
 }
 
 function deletePhoto(album_no) {
-	var ok = confirm("진짜 삭제?");
+	var ok = confirm("吏꾩쭨?");
 	if (ok) {
 		location.href = "album.delete?album_no=" + album_no;
 	}

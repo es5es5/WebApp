@@ -112,7 +112,6 @@
 
                 // Deactivate body.
                 $body.removeClass('content-active');
-
             });
 
             // Toggles.
@@ -123,7 +122,6 @@
                     event.stopPropagation();
 
                     $this.trigger('---toggle');
-
                 });
 
         });
@@ -302,7 +300,7 @@
             popupWidth: 150,
             selector: '.thumb > a.image',
             usePopupCaption: true,
-            usePopupCloser: true,	// Å¬·ÎÀú ¼³Á¤
+            usePopupCloser: true,	// í´ë¡œì ¸ ì‚¬ìš©í• ì§€ë§ì§€
             usePopupDefaultStyling: false,
             usePopupForceClose: true,
             usePopupLoader: true,

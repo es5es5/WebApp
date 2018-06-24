@@ -8,12 +8,9 @@
 	<insert id="insertAlbum"
 		parameterType="com.lhw.jins.album.Album">
 		INSERT INTO jins_album
-		values(
+		values(        
 		jins_album_seq.nextval,
-		#{album_img},
-		(SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHmmss') as curDate FROM dual),
-		{album_txt1},
-		{album_txt2}
+		#{album_img}, sysdate, #{album_txt1}, #{album_txt2}
 		)
 	</insert>
 
