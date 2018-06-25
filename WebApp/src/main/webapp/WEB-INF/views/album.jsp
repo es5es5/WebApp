@@ -31,7 +31,7 @@
 		<!-- Header -->
 		<header id="header">
 		<h1>
-			<a href="index.go"><strong>JinsLover</strong>.</a>
+			<a href="index.go"><strong>HOME</strong>.</a>
 		</h1>
 		<nav>
 		<ul>
@@ -65,7 +65,6 @@
 				</article>
 			</c:forEach>
 		</div>
-
 
 		<!-- Insert Photo -->
 		<footer id="insert_photo" class="panel">
