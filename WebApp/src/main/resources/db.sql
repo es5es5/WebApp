@@ -28,3 +28,5 @@ values(
 	#{album_txt1},
 	#{album_txt2}
 );
+
+SELECT * FROM jins_album order by album_no desc;
