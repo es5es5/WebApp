@@ -29,3 +29,13 @@ imgTarget
 								+ imgSrc + "\")";
 					}
 				});
+
+var albumNoGlobal;
+
+function getAlbumNo(albumNo) {
+	albumNoGlobal = albumNo;
+}
+
+function deleteAlbum(){
+	location.href="album.delete?album_no="+albumNoGlobal;
+}

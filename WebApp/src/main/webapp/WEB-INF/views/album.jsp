@@ -21,7 +21,7 @@
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="resources/album/assets/js/main.js"></script>
 <script src="resources/album/assets/js/check.js"></script>
-
+<script src="resources/album/assets/js/myjs.js"></script>
 </head>
 <body>
 
@@ -54,8 +54,8 @@
 			-->
 
 			<!-- Using DB (DAO üũ) -->
-			<c:forEach var="album" items="${albumList }">
-				<article class="thumb"> <a href="resources/album/images/fulls/${album.album_img }" class="image">
+			<c:forEach var="album" items="${sessionScope.albumList}">
+				<article class="thumb"> <a href="resources/album/images/fulls/${album.album_img }" class="image" onclick="getAlbumNo(${album.album_no})">
 				<img src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
 				<h2>${album.album_txt1 }</h2>
 				<p>${album.album_txt2 }</p>
@@ -155,8 +155,6 @@
 			</div>
 		</div>
 		</footer>
-		
 	</div>
-
 </body>
 </html>
