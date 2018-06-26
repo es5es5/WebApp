@@ -28,7 +28,7 @@
 		<a href="index.go" id="mainCloud"><span
 			class="icon major fa-cloud"></span></a>
 		<h1>
-			Hello! &nbsp;&nbsp; I'm <strong>JinsLover</strong>.
+			Hello! &nbsp; I'm <strong>JinsLover</strong>¢¾
 		</h1>
 		<p>
 			Place to save the memories of moment.<br />

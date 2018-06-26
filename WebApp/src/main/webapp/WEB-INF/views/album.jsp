@@ -55,12 +55,15 @@
 
 			<!-- Using DB (DAO 체크) -->
 			<c:forEach var="album" items="${sessionScope.albumList}">
-				<article class="thumb"> <a href="resources/album/images/fulls/${album.album_img }" class="image" onclick="getAlbumNo(${album.album_no})">
-				<img src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
+				<article class="thumb"> <a
+					href="resources/album/images/fulls/${album.album_img }"
+					class="image" onclick="getAlbumNo(${album.album_no})"> <img
+					src="resources/album/images/fulls/${album.album_img }" alt="" /></a>
 				<h2>${album.album_txt1 }</h2>
 				<p>${album.album_txt2 }</p>
 				<p align="right">
-				<fmt:formatDate value="${album.album_date }" type="both" dateStyle="long" timeStyle="short"/>
+					<fmt:formatDate value="${album.album_date }" type="both"
+						dateStyle="long" timeStyle="short" />
 				</p>
 				</article>
 			</c:forEach>
@@ -96,9 +99,8 @@
 			</div>
 		</div>
 		</footer>
-
-
-		<!-- Footer -->
+		<!-- 기존 Footer
+		
 		<footer id="footer" class="panel">
 		<div class="inner split">
 			<div>
@@ -154,6 +156,7 @@
 			</div>
 		</div>
 		</footer>
+		-->
 	</div>
 </body>
 </html>

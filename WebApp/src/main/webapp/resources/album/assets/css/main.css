@@ -1136,7 +1136,7 @@
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background-image: url("images/close.svg");
+			background-image: url("images/deleteIcon.png");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 3em;
