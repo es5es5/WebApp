@@ -7,7 +7,7 @@ textarea {
 	resize: none;
 }
 
-img #img_reg {
+#img_reg {
 	width: 20em;
 	hight: 20em;
 }

@@ -13,7 +13,7 @@ function deleteAlbum() {
 
 function updateAlbum() {
 	alert(albumNoGlobal);
-	window.open('album.update&album_no=' + albumNoGlobal, 'Update Photo', 'height=400, width=300, resizable=no, scrollbars=no')
+	window.open('album.update.do', 'Update Photo', 'height=400, width=300, resizable=no, scrollbars=no');
 //	if (ok) {
 //		location.href = "album.update?album_no=" + albumNoGlobal;
 //	}

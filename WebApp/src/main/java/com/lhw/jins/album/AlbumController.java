@@ -36,8 +36,8 @@ public class AlbumController {
 	}
 	
 	// 로그인 Check 구현 필요
-	@RequestMapping(value = "/album.update", method = RequestMethod.POST)
-	public String albumUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value = "/album.update.do", method = RequestMethod.GET)
+	public String DoUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
 //		if (mDAO.loginCheck(req, res)) {
 //			sDAO.updateSNSMsg(sm, req, res);
 //		}
@@ -46,8 +46,14 @@ public class AlbumController {
 //		cDAO.getMsg(req, res);
 //		return "index";
 
-		aDAO.update(album, request, response);
-		return "index";
+//		aDAO.update(album, request, response);
+		return "photoUpdate";
+	}
+	
+	@RequestMapping(value = "/album.update.go", method = RequestMethod.GET)
+	public String GoUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
+		
+		return "photoUpdate";
 	}
 	
 	// 비동기식으로 구현해야될 필요가 있음.
