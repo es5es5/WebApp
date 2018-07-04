@@ -7,6 +7,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="resources/album/assets/css/main.css" />
+<link rel="stylesheet" href="resources/album/assets/css/mycss.css" />
 <!-- 
 <script src="resources/album/assets/js/jquery.min.js"></script>
 <script src="resources/album/assets/js/jquery.poptrox.min.js"></script>
@@ -16,6 +17,8 @@
 <script src="resources/album/assets/js/main.js"></script>
 <script src="resources/album/assets/js/check.js"></script>
 <script src="resources/album/assets/js/myjs.js"></script>
+<script src="resources/album/assets/js/myjs.js"></script>
+<script src="resources/validCheck.js"></script>
  
 <title>사진 수정</title>
 </head>
@@ -29,7 +32,7 @@
 				<section>
 				<h2>UPDATE PHOTO</h2>
 				<form action="album.update.do" method="post"
-					enctype="multipart/form-data" name="insertPhotoForm"
+					enctype="multipart/form-data" name="updatePhotoForm"
 					onsubmit="updatePhotoCheck();">
 					<div class="field half first">
 						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />

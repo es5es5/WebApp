@@ -21,7 +21,6 @@ public class AlbumController {
 	// 로그인 Check 구현 필요
 	@RequestMapping(value = "/album.insert", method = RequestMethod.POST)
 	public String albumInsert(Album album, HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("컨트롤러 들어옴");
 		// if (mDAO.loginCheck(request, respond)) {}
 		// sDAO.writeSNSMsg(sm, request, respond);
 

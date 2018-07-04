@@ -22,6 +22,7 @@
 <script src="resources/album/assets/js/main.js"></script>
 <script src="resources/album/assets/js/check.js"></script>
 <script src="resources/album/assets/js/myjs.js"></script>
+<script src="resources/validCheck.js"></script>
 <script type="text/javascript">
 	$(function () {
 		ad_productMainImgReg_Click();
