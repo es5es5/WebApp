@@ -305,7 +305,7 @@
             usePopupForceClose: true,
             usePopupLoader: true,
             usePopupNav: true,
-            useDeleteButton: true,
+            useUpdateButton: true,
             windowMargin: 50
         });
 
