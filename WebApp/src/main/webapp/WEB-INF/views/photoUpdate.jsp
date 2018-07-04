@@ -7,9 +7,8 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="resources/album/assets/css/main.css" />
-<link rel="stylesheet" href="resources/album/assets/css/mycss.css" />
-<script src="resources/album/assets/js/jquery.min.js"></script>
 <!-- 
+<script src="resources/album/assets/js/jquery.min.js"></script>
 <script src="resources/album/assets/js/jquery.poptrox.min.js"></script>
  -->
 <script src="resources/album/assets/js/skel.min.js"></script>
@@ -21,7 +20,7 @@
 <title>사진 수정</title>
 </head>
 <body>
-<footer id="insert_photo" class="panel">
+<footer id="insert_photo">
 		<div class="inner split">
 			<div>
 				<section> <img id="img_reg"> </section>
@@ -29,9 +28,9 @@
 			<div>
 				<section>
 				<h2>UPDATE PHOTO</h2>
-				<form action="album.insert" method="post"
+				<form action="album.update.do" method="post"
 					enctype="multipart/form-data" name="insertPhotoForm"
-					onsubmit="insertPhotoCheck();">
+					onsubmit="updatePhotoCheck();">
 					<div class="field half first">
 						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />
 					</div>
@@ -43,7 +42,7 @@
 							placeholder="A description of this photo."></textarea>
 					</div>
 					<ul class="actions">
-						<li><input type="submit" value="INSERT" class="special" /></li>
+						<li><input type="submit" value="UPDATE" class="special" /></li>
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
 				</form>
