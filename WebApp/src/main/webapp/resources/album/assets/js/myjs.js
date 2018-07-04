@@ -11,6 +11,14 @@ function deleteAlbum() {
 	}
 }
 
+function updateAlbum() {
+	alert(albumNoGlobal);
+	window.open('album.update&album_no=' + albumNoGlobal, 'Update Photo', 'height=400, width=300, resizable=no, scrollbars=no')
+//	if (ok) {
+//		location.href = "album.update?album_no=" + albumNoGlobal;
+//	}
+}
+
 // 메인 이미지 등록(미리보기)
 function ad_productMainImgReg_Click() {
 	var sel_file;

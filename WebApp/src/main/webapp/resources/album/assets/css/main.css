@@ -1227,14 +1227,14 @@
 		}
 
 		.poptrox-popup:hover .closer,
-		.poptrox-popup:hover #update,
+		.poptrox-popup:hover .update,
 		.poptrox-popup:hover .nav-previous,
 		.poptrox-popup:hover .nav-next {
 			opacity: 0.5;
 		}
 
 			.poptrox-popup:hover .closer:hover,
-			.poptrox-popup:hover #update:hover,
+			.poptrox-popup:hover .udpate:hover,
 			.poptrox-popup:hover .nav-previous:hover,
 			.poptrox-popup:hover .nav-next:hover {
 				opacity: 1.0;
@@ -1245,7 +1245,7 @@
 		}
 
 		body.touch .poptrox-popup .closer,
-		body.touch .poptrox-popup #update,
+		body.touch .poptrox-popup .update,
 		body.touch .poptrox-popup .nav-previous,
 		body.touch .poptrox-popup .nav-next {
 			opacity: 1.0 !important;
@@ -1257,7 +1257,7 @@
 				background-size: 3em;
 			}
 			
-			.poptrox-popup #update {
+			.poptrox-popup .update {
 				background-size: 3em;
 			}
 
@@ -1279,7 +1279,7 @@
 			}
 
 			.poptrox-popup .closer,
-			.poptrox-popup #update,
+			.poptrox-popup .update,
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
 				display: none !important;

@@ -12,7 +12,7 @@ img #img_reg {
 	hight: 20em;
 }
 
-.poptrox-popup #update {
+.poptrox-popup .update {
 	-moz-transition: opacity 0.2s ease-in-out;
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-ms-transition: opacity 0.2s ease-in-out;
@@ -27,5 +27,5 @@ img #img_reg {
 	left: 0;
 	top: 0;
 	width: 5em;
-	z-index: 3;
+	z-index: 2;
 }
