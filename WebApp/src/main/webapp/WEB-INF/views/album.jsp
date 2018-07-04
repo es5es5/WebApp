@@ -22,6 +22,11 @@
 <script src="resources/album/assets/js/main.js"></script>
 <script src="resources/album/assets/js/check.js"></script>
 <script src="resources/album/assets/js/myjs.js"></script>
+<script type="text/javascript">
+	$(function () {
+		ad_productMainImgReg_Click();
+	});
+</script>
 </head>
 <body>
 
@@ -72,7 +77,9 @@
 		<!-- Insert Photo -->
 		<footer id="insert_photo" class="panel">
 		<div class="inner split">
-			<div></div>
+			<div>
+				<section> <img id="img_reg"> </section>
+			</div>
 			<div>
 				<section>
 				<h2>INSERT PHOTO</h2>
@@ -82,9 +89,8 @@
 					<div class="field half first">
 						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />
 					</div>
-					<div class="filebox bs3-primary preview-image">
-						<input type="file" name="album_img" id="input_file"
-							class="upload-hidden">
+					<div>
+						<input type="file" name="album_img" id="input_img">
 					</div>
 					<div class="field">
 						<textarea name="album_txt2" id="message" rows="4"

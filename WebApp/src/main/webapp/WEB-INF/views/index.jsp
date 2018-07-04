@@ -50,6 +50,7 @@
 				</h2>
 				</header>
 				<p>John Sheffield.</p>
+				<a href="stupid_kokutaho.go" onclick="window.open(this.href, '개발바닥 이시니스 결제창인증','width=600, height=700');return false;" target="_blank">고금천 바보 ㅡㅡ</a>
 			</div>
 			<div class="6u$ 12u$(medium) important(medium)">
 				<span class="image fit"><img
@@ -58,7 +59,6 @@
 		</div>
 	</div>
 	</section>
-
 
 	<!-- #### Two ####
 	<section id="two" class="main style2">
@@ -179,7 +179,5 @@
 				UP</a></li>
 	</ul>
 	</section>
-
-
 </body>
 </html>

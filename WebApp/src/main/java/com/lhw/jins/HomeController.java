@@ -33,5 +33,11 @@ public class HomeController {
 		aDAO.getAllAlbum(request, response);
 		return "album";
 	}
+	
+	@RequestMapping(value = "/stupid_kokutaho.go", method = RequestMethod.GET)
+	public String gokkth(HttpServletRequest request, HttpServletResponse response) {
+		return "kkth";
+	}
+	
 
 }
