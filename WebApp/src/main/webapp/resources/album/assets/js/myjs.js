@@ -12,9 +12,8 @@ function deleteAlbum() {
 }
 
 function updateAlbum() {
-	var updateWin = window.open('album.update.go', 'newWin', 'height=640, width=800, menubar=no, toolbar=no, resizable=no, scrollbars=no');
-	var updateForm = document.updatePhotoForm;
-	updateForm.submit();
+	alert(albumNoGlobal);
+	window.open("album.update.go?album_no=" + albumNoGlobal, 'newWin', 'height=640, width=800, menubar=no, toolbar=no, resizable=no, scrollbars=no');
 }
 
 // 메인 이미지 등록(미리보기)

@@ -30,3 +30,6 @@ values(
 );
 
 SELECT * FROM jins_album order by album_no desc;
+
+SELECT * FROM jins_album WHERE album_no=104;
+

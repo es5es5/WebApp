@@ -1,5 +1,7 @@
 package com.lhw.jins.album;
 
+import java.util.concurrent.SynchronousQueue;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -36,22 +38,15 @@ public class AlbumController {
 	
 	// 로그인 Check 구현 필요
 	@RequestMapping(value = "/album.update.go", method = RequestMethod.GET)
-	public String DoUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
-//		if (mDAO.loginCheck(req, res)) {
-//			sDAO.updateSNSMsg(sm, req, res);
-//		}
-//		sDAO.getAllSNSMsg(req, res);
-//		req.getSession().setAttribute("contentPage", "home.jsp");
-//		cDAO.getMsg(req, res);
-//		return "index";
-
+	public String goUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
+		aDAO.getAlbumByNo(album, request, response);
+		System.out.println(album.getAlbum_no() + "앨범 넘버에요~~~~");
 		return "photoUpdate";
 	}
 	
 	@RequestMapping(value = "/album.update.do", method = RequestMethod.POST)
-	public String GoUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
+	public void doUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
 		aDAO.update(album, request, response);
-		return "photoUpdate";
 	}
 	
 	// 비동기식으로 구현해야될 필요가 있음.

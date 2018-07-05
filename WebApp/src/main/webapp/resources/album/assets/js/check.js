@@ -16,9 +16,6 @@ function updatePhotoCheck() {
 	var txt1Field = document.updatePhotoForm.album_txt1;
 	var txt2Field = document.updatePhotoForm.album_txt2;
 	var imgField = document.updatePhotoForm.album_img;
-	alert(txt1Field.value);
-	alert(txt2Field.value);
-	alert(imgField.value);
 	
 	if (isEmpty(imgField) || (isNotType(imgField, ".png") && isNotType(imgField, ".gif") && isNotType(imgField, ".jpg") && isNotType(imgField, ".bmp"))) {
 		alert("Check Photo File.")

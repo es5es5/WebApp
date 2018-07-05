@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lhw.jins.album.AlbumMapper">
+
 	<select id="selectAlbum" resultType="com.lhw.jins.album.Album">
 		SELECT * FROM jins_album order by album_no desc
+	</select>
+	
+	<select id="getAlbumByNo" parameterType="com.lhw.jins.album.Album" resultType="com.lhw.jins.album.Album">
+		SELECT * FROM jins_album WHERE album_no=#{album_no}
 	</select>
 
 	<insert id="insertAlbum"
@@ -25,7 +30,8 @@
 		UPDATE jins_album
 		SET album_img = #{album_img},
 		album_date = sysdate,
-		album_txt = #{album_txt}
+		album_txt1 = #{album_txt1}
+		album_txt2 = #{album_txt2}
 		WHERE
 		album_no=#{album_no}
 	</update>

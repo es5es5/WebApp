@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+    
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,7 +37,11 @@
 				<form action="album.update.do" method="post"
 					enctype="multipart/form-data" name="updatePhotoForm"
 					onsubmit="updatePhotoCheck();">
+					
 					<div class="field half first">
+					<c:forEach var="album" items="${getAlbum}">
+						<input value="${album.album_no }">
+					</c:forEach>
 						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />
 					</div>
 					<div>
