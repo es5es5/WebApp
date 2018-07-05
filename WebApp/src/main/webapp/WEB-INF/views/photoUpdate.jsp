@@ -40,7 +40,7 @@
 					
 					<div class="field half first">
 					<c:forEach var="album" items="${getAlbum}">
-						<input value="${album.album_no }">
+						<input name="album_no" value="${album.album_no }" display="none">
 					</c:forEach>
 						<input type="text" name="album_txt1" id="name" placeholder="TITLE" />
 					</div>

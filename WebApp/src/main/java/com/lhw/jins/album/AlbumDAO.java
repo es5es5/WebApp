@@ -1,5 +1,6 @@
 package com.lhw.jins.album;
 
+import java.math.BigDecimal;
 import java.net.URLEncoder;
 
 import javax.servlet.http.HttpServletRequest;
@@ -58,6 +59,7 @@ public class AlbumDAO {
 			album.setAlbum_img(jins_img);
 			album.setAlbum_txt1(mr.getParameter("album_txt1"));
 			album.setAlbum_txt2(mr.getParameter("album_txt2"));
+			album.setAlbum_no(new BigDecimal(mr.getParameter("album_no")));
 
 			if (ss.getMapper(AlbumMapper.class).updateAlbum(album) == 1) {
 				System.out.println("사진 수정 성공");

@@ -30,7 +30,7 @@
 		UPDATE jins_album
 		SET album_img = #{album_img},
 		album_date = sysdate,
-		album_txt1 = #{album_txt1}
+		album_txt1 = #{album_txt1},
 		album_txt2 = #{album_txt2}
 		WHERE
 		album_no=#{album_no}

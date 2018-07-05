@@ -45,8 +45,9 @@ public class AlbumController {
 	}
 	
 	@RequestMapping(value = "/album.update.do", method = RequestMethod.POST)
-	public void doUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
+	public String doUpdate(Album album, HttpServletRequest request, HttpServletResponse response) {
 		aDAO.update(album, request, response);
+		return "album";
 	}
 	
 	// 비동기식으로 구현해야될 필요가 있음.
